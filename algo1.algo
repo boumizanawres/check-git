@@ -1,0 +1,26 @@
+start ALGORITHM chekpoint_algo1
+VAR 
+var ch:STRING;
+var i,j,k:INTEGER; 
+var n,m,v:INTEGER:=0;  
+BEGIN
+FOR i FROM 1 to sentence.lenght STEP step DO
+   IF(ch[i] IN ([A..Z] OR [a..z]))
+  THEN n:=n+1;
+   END_FOR
+   write ("The length of the sentence",i);
+   FOR j FROM to sentence.lenght STEP step DO
+   IF (ch[j]=" ") THEN m:=m+1;
+   END_FOR
+   write ("The number of words in the sentence",j+1);
+
+      FOR k from to sentence.lenght STEP step DO
+   IF (ch[k]IN ([a,i,u,e,y,o] OR [A,O,U,I,Y,E])) THEN v:=v+1;
+   END_FOR
+   write ("The number of vowels in the sentence",k);
+
+
+
+
+
+END
